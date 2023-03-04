@@ -1,6 +1,6 @@
 # sysmon-config | A Sysmon configuration file
 
-This is Daena and it is a forked and modified version of @SwiftOnSecurity  [sysmon config](https://github.com/SwiftOnSecurity/sysmon-config)And @Neo23x0 And Config's Mehdi Hatami.
+This is Daena and it is a forked and modified version of @SwiftOnSecurity  [sysmon config](https://github.com/SwiftOnSecurity/sysmon-config) And @Neo23x0 
 
 It started as a is simply copy of the original repository. We merged most of the 30+ open pull requests. Thus we have fixed many of the issues that are still present in the original version and extended the coverage with important new extensions.
 
@@ -51,7 +51,7 @@ Please report:
 Run with administrator rights
 
 ```batch
-sysmon.exe -accepteula -i "Daenaa- Sysmon Config- 2023.xml"
+sysmon.exe -accepteula -i "Daenaa-SysmonConfig.xml"
 ```
 
 ### Update existing configuration
@@ -59,7 +59,7 @@ sysmon.exe -accepteula -i "Daenaa- Sysmon Config- 2023.xml"
 Run with administrator rights
 
 ```batch
-sysmon.exe -c "Daenaa- Sysmon Config- 2023.xml"
+sysmon.exe -c "Daenaa-SysmonConfig.xml"
 ```
 
 ### Uninstall
@@ -74,10 +74,10 @@ sysmon.exe -u
 
 Run with administrator rights
 ```batch
-sysmon.exe -c "Daenaa- Sysmon Config- 2023.xml" -d XDrv
+sysmon.exe -c "Daenaa-SysmonConfig.xml" -d XDrv
 ```
 
-### You can change name of "sysmon.exe"
+### You can change name of "sysmon.exe" 
 
 
 ## Credits
