@@ -1,7 +1,7 @@
 # sysmon-config | A Sysmon configuration file
 
 This is Daena and it is a forked and modified version of @SwiftOnSecurity  [sysmon config](https://github.com/SwiftOnSecurity/sysmon-config) And @Neo23x0 .
-I wrote 
+
 
 It started as a is simply copy of the original repository. We merged most of the 30+ open pull requests. Thus we have fixed many of the issues that are still present in the original version and extended the coverage with important new extensions.
 
@@ -82,4 +82,4 @@ sysmon.exe -c "Daenaa-SysmonConfig.xml" -d XDrv
 This is good for providing security, but it is not enough, because despite changing the name of the sysmon.exe, the hacker is still able to identify it in other ways.
 
 
-## Credits
+
