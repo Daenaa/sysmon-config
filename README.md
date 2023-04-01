@@ -1,3 +1,6 @@
+[Uploading pic3.png…]()
+
+
 # sysmon-config | A Sysmon configuration file
 
 This is Daena and it is a forked and modified version of @SwiftOnSecurity  [sysmon config](https://github.com/SwiftOnSecurity/sysmon-config) And @Neo23x0 .
