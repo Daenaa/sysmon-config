@@ -1,4 +1,4 @@
-[Uploading pic3.png…]()
+
 
 
 # sysmon-config | A Sysmon configuration file
