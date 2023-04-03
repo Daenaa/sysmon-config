@@ -25,6 +25,7 @@ I create this mixed configuration. I fork sysmon modular and then mix it with ot
 - Christian Burkard @phantinuss
 - Nasreddine Bencherchali @nas_bench
 - Olaf Hartong @olafhartong
+- @SwiftOnSecurity
 
 ## Additional coverage includes
 
