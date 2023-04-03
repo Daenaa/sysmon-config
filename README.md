@@ -51,7 +51,7 @@ Rename "sysmon64.exe" or "sysmon.exe" to another name, to hide it (with differen
 
 Run powershell or cmd with Admin Rights (Run as Admin) and change path to your sysmon folder
 
-Install command: `Daena.exe -accepteula -i "sysmon-pcsg-daena-default.xml" -d daenadrv`
+Install command: `Daena.exe -accepteula -i "Daenaa-SysmonConfig.xml" -d daenadrv`
 
 
 **3) Change Service**
