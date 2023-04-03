@@ -2,7 +2,7 @@
 
 
 
-## A) Summary
+##  Summary
 
 Sysmon has two configuration type:
 
