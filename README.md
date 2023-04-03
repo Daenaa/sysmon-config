@@ -35,7 +35,7 @@ I create this mixed configuration. I fork sysmon modular and then mix it with ot
 
 ##  Installation (and make it secure)
 
-We want to install sysmon a little different to protect it more. so we will change process name from "sysmon" to "pcsgmon", change drive name to "pcsgdrv" and change service name to "pcsgservice". follow the example:
+We want to install sysmon a little different to protect it more. so we will change process name from "sysmon" to "Daena", change drive name to "daenadrv" and change service name to "daenaaservice". follow the example:
 
 
 **1) Get Ready:**
