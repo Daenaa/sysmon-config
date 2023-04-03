@@ -1,14 +1,24 @@
 
 
 
-# sysmon-config | A Sysmon configuration file
 
-This is Daena and it is a forked and modified version of @SwiftOnSecurity  [sysmon config](https://github.com/SwiftOnSecurity/sysmon-config) And @Neo23x0 .
+## A) Summary
+
+Sysmon has two configuration type:
+
+1- Targetting: These configuration's will collect logs of special events and useful for Threat Hunting
+
+2- Tracking: These configuration's will collect more logs (also some noisy logs) to fill dashboards abd useful for SOC and correlation engines.
 
 
-It started as a is simply copy of the original repository. We merged most of the 30+ open pull requests. Thus we have fixed many of the issues that are still present in the original version and extended the coverage with important new extensions.
 
-## Maintainers of this Fork
+I create this mixed configuration. I fork sysmon modular and then mix it with other fork's and my knowledge about detection and threat hunting.
+
+
+
+*Note: This configuration will raise your events (5x of sysmon modular default configuration), so be careful and re-calculate your license, resource's data lifecycle policie's.*
+
+## Fork Information
 
 - Florian Roth @Neo23x0
 - Tobias Michalski @humpalum
@@ -21,14 +31,41 @@ It started as a is simply copy of the original repository. We merged most of the
 - PrinterNightmare
 - HiveNightmare
 - Mimikatz
-
 - Macros
 
-## Configs in this Repository
+##  Installation (and make it secure)
 
-This repo includes the original and one additional configurations
+We want to install sysmon a little different to protect it more. so we will change process name from "sysmon" to "pcsgmon", change drive name to "pcsgdrv" and change service name to "pcsgservice". follow the example:
 
-- `sysmonconfig-export.xml` the original config provided by @SwiftOnSecurity
+
+**1) Get Ready:**
+
+Download last version of Sysmon from [Microsoft](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) or [Sysinternals](https://download.sysinternals.com/files/Sysmon.zip).
+
+Download symon cofig file in here [(Download)](https://github.com/Daenaa/sysmon-config/blob/master/Daenaa-SysmonConfig.xml) and copy in you downloaded sysmon folder.
+
+Rename "sysmon64.exe" or "sysmon.exe" to another name, to hide it (with different name) in process list. for example we rename "sysmon64.exe" to "Daena.exe"
+
+
+**2) Installation**
+
+Run powershell or cmd with Admin Rights (Run as Admin) and change path to your sysmon folder
+
+Install command: `Daena.exe -accepteula -i "sysmon-pcsg-daena-default.xml" -d daenadrv`
+
+
+**3) Change Service**
+
+After install, open "regedit.exe" and go to `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\daena`
+
+Now change DisplayName: Daena Service
+
+And change Description: Enables daena process live
+
+
+
+*also you can use these steps for your SIEM agent installation*
+
 
 ## Other Sysmon Configs
 
@@ -78,7 +115,7 @@ sysmon.exe -u
 
 Run with administrator rights
 ```batch
-sysmon.exe -c "Daenaa-SysmonConfig.xml" -d XDrv
+daena.exe -c "Daenaa-SysmonConfig.xml" -d daenaDrv
 ```
 
 ### You can change name of "sysmon.exe" 
