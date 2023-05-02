@@ -36,7 +36,8 @@ This configuration contains the protection channel  which is called  "FileBlockE
 - Mimikatz
 - Macros
 
-##Update
+## Update
+
 on May2,2023: 
 Update EventCode=12 and Sub.Technique 1547.014 about Boot or Logon Autostart Execution: Active Setup 
 Tactics: Persistence, Privilege Escalation
