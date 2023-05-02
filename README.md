@@ -36,6 +36,12 @@ This configuration contains the protection channel  which is called  "FileBlockE
 - Mimikatz
 - Macros
 
+##Update
+on May2,2023: 
+Update EventCode=12 and Sub.Technique 1547.014 about Boot or Logon Autostart Execution: Active Setup 
+Tactics: Persistence, Privilege Escalation
+Adversaries may abuse Active Setup by creating a key under HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components\ and setting a malicious value for StubPath. This value will serve as the program that will be executed when a user logs into the computer.
+
 ##  Installation (and make it secure)
 
 We want to install sysmon a little different to protect it more. so we will change process name from "sysmon" to "Daena", change drive name to "daenadrv" and change service name to "daenaservice". follow the example:
