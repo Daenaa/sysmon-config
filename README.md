@@ -19,7 +19,7 @@ This configuration contains the protection channel  which is called  "FileBlockE
 
 
  * Significant02:
-This configuration contains the protection channel  which is called "File Executable Detected" and is generated when Sysmon detects the creation of a new executable file (PE format).
+This configuration contains the protection channel  which is called "File Executable Detected" and is generated when Sysmon detects the creation of a new executable file (PE format) , Event ID= 29.
 
 *Note: This configuration will raise your events (5x of sysmon modular default configuration), so be careful and re-calculate your license, resource's data lifecycle policie's.*
 
