@@ -2444,6 +2444,12 @@
         <SourceImage name="technique_id=T1055,technique_name=Process Injection" condition="begin with">\\</SourceImage>
       </CreateRemoteThread>
     </RuleGroup>
+
+     <RuleGroup name="" groupRelation="or">
+         <FileDeleteDetected onmatch="exclude">
+            <TargetFilename condition="contains all">C:\Windows\Prefetch;.pf</TargetFilename>
+         </FileDeleteDetected>
+      </RuleGroup>
     
 
 <!--SYSMON EVENT ID 27 : FILE BLOCK [FileBlockExecutable]-->
@@ -2764,13 +2770,6 @@
 	
 	  </FileExecutableDetected>
      </RuleGroup>
-
-     <RuleGroup name="" groupRelation="or">
-         <FileDeleteDetected onmatch="exclude">
-            <TargetFilename condition="contains all">C:\Windows\Prefetch;.pf</TargetFilename>
-         </FileDeleteDetected>
-      </RuleGroup>
-	  
    </EventFiltering>
 </Sysmon>
 
