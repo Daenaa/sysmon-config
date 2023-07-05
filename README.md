@@ -1,7 +1,4 @@
 
-
-
-
 ##  Summary
 
  * This config file contains Sysmon v15.0.     
@@ -32,6 +29,7 @@ This configuration contains the protection channel  which is called "File Execut
 - Nasreddine Bencherchali @nas_bench
 - Olaf Hartong @olafhartong
 - @SwiftOnSecurity
+-  @magicsword-io (LOLDrivers)
 
 ## Additional coverage includes
 
