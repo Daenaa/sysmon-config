@@ -1,7 +1,8 @@
 
 ##  Summary
 
- * This config file contains Sysmon v15.0.     
+ * This config file contains Sysmon v15.0
+ * And includes Event IDs 27,28,29.
 
 Sysmon has two configuration type:
 
